@@ -10,8 +10,7 @@ const capabilities = {
   "avd": "Nexus_5X_API_23",
   "platformName": "Android",
   "platformVersion": "6.0",
-  "deviceName": "Android Emulator",
-  "chromedriverExecutable": "/Users/vruno/Sauce/appium-android-driver/Chromedriver"
+  "deviceName": "Android Emulator"  
 };
 
 describe('createSession', function () {
@@ -24,6 +23,6 @@ describe('createSession', function () {
   });
   it('should start brave browser', async () => {
     await driver.createSession(capabilities);
-    await driver.getFocusedPackageAndActivity();    
+    await driver.getFocusedPackageAndActivity();
   });
 });
